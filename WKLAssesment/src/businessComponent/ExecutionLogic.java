@@ -55,7 +55,7 @@ public class ExecutionLogic extends SeleniumHelper{
 	public void emptyCart(){
 		
 		//Navigate to my orders
-		//findelement(myOrders).click();
+		
 		//Empty the cart before proceeding further
 		findelement(myBasket).click();
 		
@@ -91,8 +91,6 @@ public class ExecutionLogic extends SeleniumHelper{
 	public void addToCart(){
 		
 		findelement(addToBasket).click();
-		//A pop-up appears
-		//AddWait
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		findelement(continueShop).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -106,8 +104,6 @@ public class ExecutionLogic extends SeleniumHelper{
 		int resultPrice = Integer.parseInt(tempArr[0].trim());
 		System.out.println(resultPrice);
 		//Continue to order
-		//findelement(basketBottom).click();
-		//return resultPrice;
 		offerValidation(resultPrice);
 	}
 	

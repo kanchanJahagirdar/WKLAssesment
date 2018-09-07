@@ -14,12 +14,7 @@ public class elementSelector {
 		//this.changedSelectMe=selectMe;
 		this.desc = desc;
 	}
-/*	public String getDescription() {
-		if (this.description != null && !this.description.isEmpty())
-			return String.format("\"%s\" (\"%s\")", this.description, this.changedSelectMe);
-		else
-			return this.changedSelectMe;
-	}*/
+
 	public static elementSelector byId(String selectMe) {
 		return elementSelector.byId(selectMe,null);
 

@@ -9,7 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 
 /**
  * 
- * @author sanket
+ * @author Kanchan Jahagirdar
  *
  */
 public class Element {

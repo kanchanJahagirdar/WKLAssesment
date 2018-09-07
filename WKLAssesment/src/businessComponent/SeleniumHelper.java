@@ -20,10 +20,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 
 public class SeleniumHelper {
-	//public static WebDriver driver=null;
 	public static WebDriver driver;
 	 public SeleniumHelper(WebDriver driver){
-		//driver=null;
 	}
 
 	public static void initilazedriver(String browser){
@@ -45,7 +43,7 @@ public class SeleniumHelper {
 	}
 	
 	public static void quit() {
-		//driver.quit();
+		driver.quit();
 	}
 	public void get(String url) {
 		driver.get(url);
