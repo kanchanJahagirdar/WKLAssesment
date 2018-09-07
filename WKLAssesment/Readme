@@ -1,0 +1,29 @@
+### Project Title:WKLAssesment
+Assignment
+
+###Prerequisites:
+Have java ,Testng,apache.commons.io,chrome exe installed
+
+###Technology Used : Java, TestNG framework, Selenium.
+
+###Features:The project consist of 3 packages:
+1.beforeSuite:
+SeleniumHelper initilazes driver(Of your choice:currently chrome)
+2.businesscomponent:
+
+Element class:Has all methods required to perform basic actions(Eg:click,gettext,submit)
+elementSelector:Has all methods by which we can select particular element(byName/byXPath)
+ExecutionLogic:Includes required methods to check Offer functionality(emptyCart/searchProduct/addToCart/checkPrice)
+Listeners:For reporting
+SeleniumHelper:Browser selection
+
+3.businessSuite
+ShoppingBol lass:Has complete functionality check by calling required methods in sequence manner
+Currently targeted product is "Google Chromecast - Media Streamer".
+
+###How to use:
+Enter credentilas of your and change parameter name="Path"(where chrome exe is stored )
+Same Path parameter is used to store screenshot when script fails
+
+###Results:
+Also diffrent formats are available in test output folder(html,emailabe)
